@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- Mobile Metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Site Metas -->
+        <title>@ViewBag.Title :: MycoNema Bank</title>
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- Site Icons -->
+        @*<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">*@
+        <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="~/Content/css/bootstrap.min.css">
+        <!-- Site CSS -->
+        <link rel="stylesheet" href="~/Content/css/style.css">
+        <!-- Responsive CSS -->
+        <link rel="stylesheet" href="~/Content/css/responsive.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="~/Content/css/custom.css">
+
+    </head>
+    <body>
+        <!-- Start Main Top -->
+        <div class="main-top">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="our-link">
+                            <ul>
+                                <li><a href="https://www.pup.edu.ph" target="_blank">Polytechnic University of the Philippines</a></li>
+                                <li><a href="/"><i class="fa fa-home"></i>&nbsp;&nbsp; Home</a></li>
+                                <li><a href="#"><i class="fa fa-edit"></i>&nbsp;&nbsp; Sign Up</a></li>
+                                <li><a href="#"><i class="fa fa-user"></i>&nbsp;&nbsp; Log In</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Main Top -->
+        <!-- Start Main Top -->
+        <header class="main-header">
+            <!-- Start Navigation -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+                <div class="container">
+                    <!-- Start Header Navigation -->
+                    <div class="navbar-header">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href="@Url.Action("index","Home")"><img src="~/Content/images/logos/logo-sm-2.png" class="logo" alt=""></a>
+                    </div>
+                    <!-- End Header Navigation -->
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="navbar-menu">
+                        <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
+                            <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">SEARCH</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="shop.html">Fungi</a></li>
+                                    <li><a href="shop-detail.html">Nematodes</a></li>
+                                    @*<li><a href="cart.html">Cart</a></li>
+                                    <li><a href="checkout.html">Checkout</a></li>
+                                    <li><a href="my-account.html">My Account</a></li>
+                                    <li><a href="wishlist.html">Wishlist</a></li>*@
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+            </nav>
+            <!-- End Navigation -->
+        </header>
+        <!-- End Main Top -->
+        
+        @RenderBody()
+
+        <!-- Start Footer  -->
+        <footer>
+            <div class="footer-main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-12 col-sm-12">
+                            <div class="footer-top-box">
+                                <h3>About MycoNema Project</h3>
+                                <p>
+                                    MycoNema Project is a DARE-TO Research Grant from the Commission on Higher Education. It is a part of their K to 12 Transition Program. This research program aims to determine the diversity of pathogenic fungal species and parasitic nematodes that cause diseases on selected Philippine fruits.<br />
+                                    Results of the analysis will be shared to the public through scientific publications and pictorial compendium and through the structuring of the MycoNemaBank which will feature the online database of all the fungal pathogens and parasitic nematodes that will be uncovered in the research.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <div class="footer-top-box">
+                                <h3>Social Media</h3>
+                                <p>Follow us on our social media account.</p>
+                                <ul>
+                                    <li><a href="https://www.facebook.com/PUPMycoNema"><i class="fab fa-facebook" aria-hidden="true"></i></a> &emsp;PUP MycoNema Project</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="footer-link">
+                                <h4>Quick Links</h4>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <ul>
+                                            <li><a href="#">About Us</a></li>
+                                            <li><a href="#">Customer Service</a></li>
+                                            <li><a href="#">Our Sitemap</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <ul>
+                                            <li><a href="#">Terms &amp; Conditions</a></li>
+                                            <li><a href="#">Privacy Policy</a></li>
+                                            <li><a href="#">Delivery Information</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer  -->
+        <!-- Start copyright  -->
+        <div class="footer-copyright">
+            <p class="footer-company">
+                All Rights Reserved. &copy; @DateTime.Now.Year. MycoNema Bank By: <a href="https://www.pup.edu.ph/">Polytechnic University of the Philippines</a>
+            </p>
+        </div>
+        <!-- End copyright  -->
+
+        <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+        @*@Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/plugins")
+        @Scripts.Render("~/bundles/bootstrap")*@
+        <!-- ALL JS FILES -->
+        <script src="~/Content/js/jquery-3.2.1.min.js"></script>
+        <script src="~/Content/js/jquery-ui.js"></script>
+        <script src="~/Content/js/popper.min.js"></script>
+        <script src="~/Content/js/bootstrap.min.js"></script>
+        <!-- ALL PLUGINS -->
+        <script src="~/Content/js/jquery.superslides.min.js"></script>
+        <script src="~/Content/js/bootstrap-select.js"></script>
+        <script src="~/Content/js/inewsticker.js"></script>
+        <script src="~/Content/js/bootsnav.js"></script>
+        <script src="~/Content/js/images-loded.min.js"></script>
+        <script src="~/Content/js/isotope.min.js"></script>
+        <script src="~/Content/js/owl.carousel.min.js"></script>
+        <script src="~/Content/js/baguetteBox.min.js"></script>
+        <script src="~/Content/js/form-validator.min.js"></script>
+        <script src="~/Content/js/contact-form-script.js"></script>
+        <script src="~/Content/js/jquery.nicescroll.min.js"></script>
+        <script src="~/Content/js/custom.js"></script>
+        @*@RenderSection("scripts", required: false)*@
+    </body>
+</html>
